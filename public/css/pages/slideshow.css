@@ -1,0 +1,178 @@
+.game-progress-page {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.game-progress-page .game-progress-action-container {
+  width: 20%;
+  padding-top: 50px;
+}
+
+.game-progress-page .game-progress-action-container .group-action {
+  margin-top: 40px;
+}
+
+.game-progress-page .game-progress-action-container .group-action button {
+  width: 80px;
+  line-height: 20px;
+  background: #0a83b9;
+  border: 1px solid #0a83b9;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.game-progress-page .game-progress-action-container .group-action .btn-decrement {
+  margin-left: 3px;
+  background: #cb3f57;
+  border: 1px solid #cb3f57;
+}
+
+.game-progress-page .game-progress-chart-container {
+  width: 80%;
+}
+
+.game-cards-container {
+  margin: 0 auto;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-cards-container .card-container {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  border: 1px solid #ccc;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  border-radius: 4px;
+}
+
+.game-cards-container .card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  border-radius: 4px;
+}
+
+.game-cards-container .card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 200px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 140px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.game-cards-container .card .front {
+  background: #ff2695;
+}
+
+.game-cards-container .card .back {
+  font-size: 80px;
+  background: #399dff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game-cards-container .card.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.countdown-page * {
+  -webkit-animation: all 0s ease-in-out;
+          animation: all 0s ease-in-out;
+}
+
+.countdown-page h1 {
+  color: #396;
+  font-size: 40px;
+  margin: 40px 0 20px;
+}
+
+.countdown-page .countdown-container {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.countdown-page .countdown-container > div {
+  padding: 40px;
+  border-radius: 10px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+.countdown-page .countdown-container > div > span {
+  padding: 40px 50px;
+  border-radius: 10px;
+  background: #00816A;
+  display: inline-block;
+  font-size: 120px;
+}
+
+.countdown-page .countdown-container .smalltext {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.countdown-page .action-container {
+  margin-top: 20px;
+}
+
+.countdown-page .action-container .btn-start,
+.countdown-page .action-container .btn-stop,
+.countdown-page .action-container .btn-reset {
+  border-radius: 3px;
+  background: white;
+  font-size: 48px;
+  width: auto;
+  height: auto;
+  padding: 20px 50px;
+  color: #444;
+  margin: 10px;
+}
+
+.countdown-page .action-container .btn-reset {
+  background: #ffad4f;
+}
+
