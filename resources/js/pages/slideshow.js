@@ -9,27 +9,27 @@ app.pages.slideshow = new class {
   init() {
     this.groups = [
       {
-        label: 'A',
+        label: '王昆队',
         value: 0
       },
       {
-        label: 'B',
+        label: '王利刚队',
         value: 0
       },
       {
-        label: 'C',
+        label: '冯伟娜队',
         value: 0
       },
       {
-        label: 'D',
+        label: '胡建超队',
         value: 0
       },
       {
-        label: 'E',
+        label: '樊欣队',
         value: 0
       },
       {
-        label: 'F',
+        label: '喻康队',
         value: 0
       }
     ].reverse()
@@ -83,7 +83,7 @@ app.pages.slideshow = new class {
   renderChart() {
     this.gameProgressChartContainer = document.querySelector('#game_progress_chart')
 
-    const legendData = _.map(this.groups, (v) => v.label + ' 队')
+    const legendData = _.map(this.groups, (v) => v.label)
     const seriesData = _.map(this.groups, (v) => v.value)
 
     const option = {

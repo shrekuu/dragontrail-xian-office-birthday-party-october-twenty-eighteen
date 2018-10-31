@@ -1,3 +1,9 @@
+.rule-list li {
+  margin-top: 20px;
+  text-align: left;
+  list-style-type: none;
+}
+
 .game-progress-page {
   width: 1200px;
   margin: 0 auto;
@@ -112,6 +118,10 @@ body {
   text-align: center;
   font-family: sans-serif;
   font-weight: 100;
+}
+
+.countdown-page {
+  padding-top: 0;
 }
 
 .countdown-page * {

@@ -34080,22 +34080,22 @@ app.pages.slideshow = new (function () {
     key: 'init',
     value: function init() {
       this.groups = [{
-        label: 'A',
+        label: '王昆队',
         value: 0
       }, {
-        label: 'B',
+        label: '王利刚队',
         value: 0
       }, {
-        label: 'C',
+        label: '冯伟娜队',
         value: 0
       }, {
-        label: 'D',
+        label: '胡建超队',
         value: 0
       }, {
-        label: 'E',
+        label: '樊欣队',
         value: 0
       }, {
-        label: 'F',
+        label: '喻康队',
         value: 0
       }].reverse();
 
@@ -34144,7 +34144,7 @@ app.pages.slideshow = new (function () {
       this.gameProgressChartContainer = document.querySelector('#game_progress_chart');
 
       var legendData = _.map(this.groups, function (v) {
-        return v.label + ' 队';
+        return v.label;
       });
       var seriesData = _.map(this.groups, function (v) {
         return v.value;
